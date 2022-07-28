@@ -1,0 +1,7 @@
+@use "../abstract/variables" as var;
+/*
+*COLORS FUNCTION
+*/
+@function getColors ($color){
+    @return map-get($map: var.$colors, $key:$color )
+};

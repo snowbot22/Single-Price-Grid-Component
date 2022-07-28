@@ -1,0 +1,19 @@
+/*
+*USE VAR AND FUNCTIONS
+*/
+@use "../abstract/functions" as funct;
+@use "../abstract/variables" as var;
+
+
+/*
+*MIXIN TYPO
+*/
+@mixin typo ($name, $size, $weight, $color, $padding, $line) {
+    .section--#{$name}{
+        font-size: $size;
+        font-weight: $weight;
+        color: $color;
+        padding: $padding;
+        line-height: $line;
+    }
+}
